@@ -11,7 +11,6 @@ public class ExcelRead {
 	             Workbook workbook = new XSSFWorkbook(fis)) {
 	            Sheet sheet = workbook.getSheet("Sheet1");
 
-	            // Iterate through the rows and columns and print the data
 	            for (Row row : sheet) {
 	                for (Cell cell : row) {
 	                    switch (cell.getCellType()) {
